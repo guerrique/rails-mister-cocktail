@@ -18,3 +18,26 @@
     text-decoration: none;
   }
 }
+
+.card-category-cocktails {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #565454;
+  font-size: 24px;
+  padding: 0 10px;
+  // font-weight: bold;
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border: 1px solid #565454;
+  border-radius: 5px;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  a {
+    color: #565454;
+    text-align: center;
+  }
+  a:hover {
+    color: #c68787;
+    text-decoration: none;
+  }
+}

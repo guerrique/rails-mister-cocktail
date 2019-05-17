@@ -1,21 +1,21 @@
+<div class="banner">
+  <div class="cocktails-page">
+    <h1>Drink yourself to death</h1>
+    <h4>because why not</h4>
+  </div>
   <div class="container">
     <div class="row">
-      <div class="first-page">
-        <h1>Drink yourself to death</h1>
-        <h4>because why not</h4>
-
-        <div class="cards">
-          <% @cocktails.each do |cocktail| %>
-          <div class="card-category">
-           <%= link_to cocktail.name, cocktail_path(cocktail) %>
-         </div>
-         <% end %>
-         <div><%= link_to 'Add a new cocktail', new_cocktail_path %></div>
+      <div class="cards">
+        <% @cocktails.each do |cocktail| %>
+        <div class="card-category-cocktails">
+         <%= link_to cocktail.name, cocktail_path(cocktail) %>
        </div>
+       <% end %>
+       <div><%= link_to 'Add a new cocktail', new_cocktail_path %></div>
      </div>
    </div>
-
-
+ </div>
+</div>
 <!--   <ul>
     <%# @cocktails.each do |cocktail| %>
     <li>
