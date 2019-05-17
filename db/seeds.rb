@@ -21,3 +21,18 @@ end
 100.times do
   Cocktail.create(name: Faker::Superhero.name)
 end
+
+# url1 = "https://unsplash.com/photos/i-hPngARAmA"
+# url2 = "https://unsplash.com/photos/EOnHT42R1a8"
+# url3 = "https://unsplash.com/photos/sL4IW4_kQ-o"
+# url4 = "https://unsplash.com/photos/22fsBrruHPQ"
+# url5 = "https://unsplash.com/photos/gj7BLlSzIFs"
+# url6 = "https://unsplash.com/photos/_PaXoN4_2s0"
+# url7 = "https://unsplash.com/photos/joaNTMyVSTc"
+# url8 = "https://unsplash.com/photos/K5IUb0kBZZ8"
+# url9 = "https://unsplash.com/photos/oNqRZ7XKJHQ"
+# url10 = "https://unsplash.com/photos/w8POFpfCRP8"
+
+# bannerurl = "https://unsplash.com/photos/gj7BLlSzIFs"
+# https://unsplash.com/photos/uUCpXitesCM
+# https://unsplash.com/photos/21rkSU5ssAk
