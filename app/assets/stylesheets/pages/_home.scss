@@ -4,16 +4,25 @@ body {
   padding: 0;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 30px;
-  width: 100vh;
-}
+// .container {
+//   margin: 0 auto;
+//   padding: 30px;
+//   width: 100vh;
+// }
 
 .first-page {
-  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1545062071-6835f9c4afcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  color: #efefef;
   width: 100%;
   margin-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  // background-repeat: no-repeat;
+  // background-attachment: scroll;
+  // top: 0;
+  padding: 30px 30px;
+  // height: 100%;
+  height: 100vh;
   h1 {
     margin-bottom: 0;
   }

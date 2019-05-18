@@ -1,19 +1,29 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1545062071-6835f9c4afcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">
-  <div class="first-page">
-    <h1>Drink yourself to death</h1>
-    <h4>because why not</h4>
-  </div>
   <div class="container">
-    <div class="cards-home">
-      <%= link_to cocktails_path do %>
-      <div id= "card-link" class= "card-category">Cocktails
+    <div class="row">
+      <div class= "first-page">
+        <div class="col-12">
+          <div>
+            <h1>Drink yourself to death</h1>
+            <h4>because why not</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8">
+            <div class="cards-home">
+              <%= link_to cocktails_path do %>
+              <div id= "card-link" class= "card-category">Cocktails
+              </div>
+              <% end %>
+              <%= link_to new_cocktail_path do %>
+              <div class="card-category" id= "card-link">Add your cocktail !
+              </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
       </div>
-      <% end %>
-      <%= link_to new_cocktail_path do %>
-      <div class="card-category" id= "card-link">Add your cocktail !
-      </div>
-      <% end %>
     </div>
   </div>
-</div>
+
+
 
