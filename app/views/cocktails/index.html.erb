@@ -1,28 +1,27 @@
-<div class="banner">
-  <div class="cocktails-page">
-    <h1> <%= link_to 'Drink yourself to death',  root_path %></h1>
-    <h4>because why not</h4>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="cards">
-        <% @cocktails.each do |cocktail| %>
-        <div class="card-category-cocktails">
-         <%= link_to cocktail.name, cocktail_path(cocktail) %>
+
+<div class="container">
+  <div class="row">
+    <div class= "page-background faded-background">
+      <div class="col-12">
+        <div>
+          <h1>Drink yourself to death</h1>
+          <h4>because why not</h4>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8">
+          <div class="cards-home">
+            <% @cocktails.each do |cocktail| %>
+              <%= link_to cocktail_path(cocktail) do %>
+                <div class= "card-category" id="card-link"><%= cocktail.name %>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+         <div><%= link_to 'Add a new cocktail', new_cocktail_path %></div>
        </div>
-       <% end %>
-       <div><%= link_to 'Add a new cocktail', new_cocktail_path %></div>
      </div>
    </div>
  </div>
 </div>
-<!--   <ul>
-    <%# @cocktails.each do |cocktail| %>
-    <li>
-      <%#= link_to cocktail.name, cocktail_path(cocktail) %>
-    </li>
-    <%# end %>
-  </ul>
-  <div><%#= link_to 'Add a new cocktail', new_cocktail_path %></div>
-</div> -->
 

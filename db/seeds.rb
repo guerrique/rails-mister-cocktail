@@ -8,19 +8,19 @@
 require 'json'
 # require 'faker'
 
-Ingredient.destroy_all
+# Ingredient.destroy_all
 Cocktail.destroy_all
 
-response = RestClient.get "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
-data = JSON.parse(response)
-data['drinks'].each do |thing|
-  Ingredient.create(name: thing["strIngredient1"])
-end
+# response = RestClient.get "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+# data = JSON.parse(response)
+# data['drinks'].each do |thing|
+#   Ingredient.create(name: thing["strIngredient1"])
+# end
 
 
-100.times do
-  Cocktail.create(name: Faker::Superhero.name)
-end
+# 100.times do
+#   Cocktail.create(name: Faker::Superhero.name)
+# end
 
 # url1 = "https://unsplash.com/photos/i-hPngARAmA"
 # url2 = "https://unsplash.com/photos/EOnHT42R1a8"
