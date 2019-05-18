@@ -1,6 +1,22 @@
-<div>Add a new cocktail</div>
+<div class="container">
+  <div class="row">
+    <div class= "page-background">
+      <div class="col-12">
+        <div class="title">
+          <h1> <%= link_to 'Drink yourself to death',  root_path %></h1>
+          <h4>because why not</h4>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8">
 
-<%= render 'form', cocktail: @cocktail %>
+          <div class="form-cocktail">
+            <h3>Add a new cocktail</h3>
+            </div>
 
-
-
+          <%= render 'form', cocktail: @cocktail %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

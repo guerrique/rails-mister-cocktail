@@ -1,7 +1,7 @@
 
 <div class="container">
   <div class="row">
-    <div class= "page-background faded-background">
+    <div class= "page-background">
       <div class="col-12">
         <div class="title">
           <h1> <%= link_to 'Drink yourself to death',  root_path %></h1>
@@ -18,7 +18,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-10 col-lg-8">
-          <div class="cards-home">
+          <div class="cards">
             <% @cocktails.each do |cocktail| %>
             <%= link_to cocktail_path(cocktail) do %>
             <div class= "card-category" id="card-link"><%= cocktail.name %>

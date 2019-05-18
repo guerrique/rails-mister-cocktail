@@ -3,13 +3,26 @@
 <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
 <div class="form-inputs">
-  <%= f.input :name %>
-  <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
+  <div>
+    <%= f.input :name %>
+  </div>
+  <div>
+    <label class="myLabel">
+      <span>Upload your photo</span>
+      <%= f.input :photo, id: 'upload-photo', label: false %>
+    </label>
+    <%= f.input :photo_cache, as: :hidden %>
+  </div>
 </div>
 
 <div class="form-actions">
-  <%= f.button :submit, class: 'btn btn-primary' %>
-  <%= link_to 'cancel', cocktails_path, class: 'btn btn-default'  %>
+  <div class="row justify-content-center">
+    <div class="btn-form">
+      <%= f.button :submit, 'All good!', class: 'btn btn-save-cocktail' %>
+    </div>
+    <div class="btn-form">
+      <%= link_to 'cancel', cocktails_path, class: 'btn btn-save-cocktail'  %>
+    </div>
+  </div>
 </div>
 <% end %>

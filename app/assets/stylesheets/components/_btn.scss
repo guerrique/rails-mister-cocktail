@@ -1,5 +1,5 @@
 .btn-card {
-  margin-top: 20px;
+  margin-top: 30px;
   a:hover {
   text-decoration: none;
   }
@@ -16,14 +16,69 @@
   padding: 5px 10px;
 }
 
-
 #btn-link:hover {
   background-color: rgba(255,255,255,0.2);
   color: #efefef;
 }
 
-#btn-add-cocktail:hover {
+.btn-add-cocktail:hover {
   background-color: rgba(255,255,255,0.2);
   color: #efefef;
 }
 
+.btn-save-cocktail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #efefef;
+  text-decoration: none;
+  border: 1px solid #efefef;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.btn-save-cocktail:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: #efefef;
+}
+
+.btn-form {
+  margin: 30px 10px;
+  color: #efefef;
+  a:hover {
+  text-decoration: none;
+  }
+}
+
+// Trying a solution to customize file upload button
+label.myLabel input[type="file"] {
+    position:absolute;
+    top: -1000px;
+}
+
+/***** Example custom styling *****/
+.myLabel {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #FFF;
+    border-radius: 5px;
+    padding: 2px 5px;
+    // margin-top: 2px;
+    background: #DDD;
+    // display: inline-block;
+    color: #585656;
+}
+.myLabel:hover {
+    background: #CCC;
+}
+.myLabel:active {
+    background: #CCF;
+}
+.myLabel :invalid + span {
+    color: #A44;
+}
+.myLabel :valid + span {
+    color: #4A4;
+}
