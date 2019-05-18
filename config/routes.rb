@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :cocktails, only: [:index, :show, :new, :create], shallow: true do
       resources :doses, only: [:index, :show, :new, :create, :destroy]
     end
+    get 'pages/modaltry', to: 'pages#modaltry'
+    get  'pages/modaltry', to: 'pages#modaltry', as: :restaurants
     # resources :ingredients, only: [:index]
   end
 

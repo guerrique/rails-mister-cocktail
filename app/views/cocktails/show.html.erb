@@ -10,8 +10,13 @@
 <%= link_to'add a dose to this cocktail', new_cocktail_dose_path(@cocktail) %>
 <p></p>
 <div>
-<% unless @cocktail.photo.nil? %>
+<% if @cocktail.photo.nil? %>
+<%= image_tag 'default-photo.jpg' %>
+<% else %>
 <%= cl_image_tag @cocktail.photo, width: 400, height: 300, crop: :fill %>
 <% end %>
-</div>
 
+<%# unless @cocktail.photo.nil? %>
+<%#= cl_image_tag @cocktail.photo, width: 400, height: 300, crop: :fill %>
+<%# end %>
+</div>
