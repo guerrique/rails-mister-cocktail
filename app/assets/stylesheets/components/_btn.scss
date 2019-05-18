@@ -9,10 +9,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #efefef;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid #efefef;
   border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-cocktail {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #585656;
+  text-decoration: none;
+  border: 1px solid #585656;
+  border-radius: 30px;
   padding: 5px 10px;
 }
 
