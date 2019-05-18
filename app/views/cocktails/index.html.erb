@@ -9,19 +9,26 @@
         </div>
       </div>
       <div class="row justify-content-center">
+        <div class="btn-card">
+          <%= link_to new_cocktail_path do %>
+          <div class="btn-add-cocktail" id="btn-link">Add a new cocktail
+          </div>
+          <% end %>
+        </div>
+      </div>
+      <div class="row justify-content-center">
         <div class="col-10 col-lg-8">
           <div class="cards-home">
             <% @cocktails.each do |cocktail| %>
-              <%= link_to cocktail_path(cocktail) do %>
-                <div class= "card-category" id="card-link"><%= cocktail.name %>
-                </div>
-              <% end %>
+            <%= link_to cocktail_path(cocktail) do %>
+            <div class= "card-category" id="card-link"><%= cocktail.name %>
+            </div>
+            <% end %>
             <% end %>
           </div>
-         <div><%= link_to 'Add a new cocktail', new_cocktail_path %></div>
-       </div>
-     </div>
-   </div>
- </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
